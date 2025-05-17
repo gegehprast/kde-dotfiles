@@ -1,10 +1,10 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](surface0)\
+[╭](subtext0)\
 $os\
 $username\
-[](bg:peach fg:surface0)\
+[](fg:base bg:peach)\
 $directory\
 [](fg:peach bg:green)\
 $git_branch\
@@ -19,12 +19,15 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:teal bg:blue)\
 $docker_context\
-[](fg:blue bg:purple)\
+[](fg:teal bg:teal)\
+[](fg:red bg:teal)\
+$cmd_duration\
+[](fg:red)\
+$fill\
 $time\
-[ ](fg:purple)\
-$line_break$character"""
+$line_break$character\
+"""
 
 palette = 'catppuccin_mocha'
 
@@ -41,6 +44,7 @@ color_red = '#cc241d'
 color_yellow = '#d79921'
 
 [palettes.catppuccin_mocha]
+purple = "#cba6f7"
 rosewater = "#f5e0dc"
 flamingo = "#f2cdcd"
 pink = "#f5c2e7"
@@ -70,7 +74,8 @@ crust = "#11111b"
 
 [os]
 disabled = false
-style = "bg:surface0 fg:text"
+style = "bg:base fg:text"
+format = '[ $symbol ]($style)'
 
 [os.symbols]
 Windows = "󰍲"
@@ -92,12 +97,13 @@ CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
+CachyOS = "󰣇"
 
 [username]
 show_always = true
-style_user = "bg:surface0 fg:text"
-style_root = "bg:surface0 fg:text"
-format = '[ $user ]($style)'
+style_user = "bg:base fg:text"
+style_root = "bg:base fg:text"
+format = '[$user ]($style)'
 
 [directory]
 style = "fg:mantle bg:peach"
@@ -121,61 +127,76 @@ format = '[[ $symbol $branch ](fg:base bg:green)]($style)'
 style = "bg:teal"
 format = '[[($all_status$ahead_behind )](fg:base bg:green)]($style)'
 
+[dotnet]
+symbol = ""
+format = '[[ $symbol( $version)](fg:base bg:teal)]($style)'
+
 [nodejs]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version)](fg:base bg:teal)]($style)'
 
 [c]
-symbol = " "
+symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version)](fg:base bg:teal)]($style)'
 
 [rust]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version)](fg:base bg:teal)]($style)'
 
 [golang]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version)](fg:base bg:teal)]($style)'
 
 [php]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version)](fg:base bg:teal)]($style)'
 
 [java]
-symbol = " "
+symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version)](fg:base bg:teal)]($style)'
 
 [kotlin]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version)](fg:base bg:teal)]($style)'
 
 [haskell]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version)](fg:base bg:teal)]($style)'
 
 [python]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version)](fg:base bg:teal)]($style)'
 
 [docker_context]
 symbol = ""
 style = "bg:mantle"
 format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
 
+[cmd_duration]
+min_time = 500
+format = '[  $duration ](fg:rosewater bg:red)'
+show_notifications = true
+min_time_to_notify = 45_000
+disabled = false
+
 [time]
 disabled = false
-time_format = "%R"
-style = "bg:peach"
-format = '[[  $time ](fg:mantle bg:purple)]($style)'
+time_format = "%I:%M %p"
+format = '[](fg:overlay0)[  $time ](fg:text bg:overlay0)'
+use_12hr = true
+
+[fill]
+symbol = '─'
+style = 'fg:subtext0'
 
 [line_break]
 disabled = false
@@ -184,7 +205,7 @@ disabled = false
 disabled = false
 success_symbol = '[](bold fg:green)'
 error_symbol = '[](bold fg:red)'
-vimcmd_symbol = '[](bold fg:creen)'
+vimcmd_symbol = '[](bold fg:green)'
 vimcmd_replace_one_symbol = '[](bold fg:purple)'
 vimcmd_replace_symbol = '[](bold fg:purple)'
 vimcmd_visual_symbol = '[](bold fg:lavender)'
