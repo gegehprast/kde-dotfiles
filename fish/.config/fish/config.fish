@@ -40,3 +40,16 @@ set -U fish_pager_color_secondary_completion "#b9b1bc" # suffix of every second 
 set -U fish_pager_color_secondary_description "#b9b1bc" # description of every second unselected completion
 
 starship init fish | source
+
+# pnpm
+set -gx PNPM_HOME "/home/gegeh/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+
+alias pp=pnpm
+# pnpm end
+
+# zoxide
+zoxide init --cmd cd fish | source
+# zoxide end
