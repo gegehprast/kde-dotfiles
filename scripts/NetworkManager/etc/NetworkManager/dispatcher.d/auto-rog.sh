@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Automatically connect to a VPN when the Ethernet interface is up
-VPN_NAME="ROG"
+VPN_NAME="ROG" # Change this to your VPN connection name
 E_DEVICE_NAME="eno1"
 WIFI_DEVICE_NAME="wlan0"
 
