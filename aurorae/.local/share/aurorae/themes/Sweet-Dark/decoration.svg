@@ -26,7 +26,7 @@
     <radialGradient id="radialGradient4263" cx="984" cy="905.362" r="8.5" fx="984" fy="905.362" gradientTransform="matrix(-1.411767,-9.899721e-6,9.8996845e-6,-1.4117618,1406.1698,1345.1655)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient4215-49"/>
   </defs>
   <rect
-     style="opacity:1;fill:#0c0e14;fill-opacity:0.8;stroke:none"
+     style="opacity:1;fill:#0c0e14;fill-opacity:0.9;stroke:none"
      id="decoration-center"
      class="ColorScheme-Background"
      width="62"
@@ -34,36 +34,28 @@
      x="1"
      y="1" />
   <g id="decoration-left">
-    <path id="path71" d="M0 1V63L1 63V1.00001L0 1Z" style="color:#383c4a;opacity:1;fill:#0c0e14;fill-opacity:0.8;stroke:none"/>
-    <!-- <path id="path4438" opacity="0.2" d="M0 1.00008V63.0001H0.142857V1.00008H0Z" fill="black"/> -->
+    <path id="path71" d="M0 1V63L1 63V1.00001L0 1Z" style="color:#383c4a;opacity:1;fill:#0c0e14;fill-opacity:0.9;stroke:none"/>
   </g>
   <g id="decoration-topleft">
-    <path id="path63" d="M1.00005 0V1.00005H0V0.714323V0H1.00005Z" style="color:#383c4a;opacity:1;fill:#0c0e14;fill-opacity:0.8;stroke:none"/>
-    <!-- <path id="rect4410" opacity="0.2" d="M0 0V0.714384V1.00011H0.142865V0.714384V0.142926H1.00005V6.10352e-05L0 0Z" fill="black"/> -->
+    <path id="path63" d="M1.00005 0V1.00005H0V0.714323V0H1.00005Z" style="color:#383c4a;opacity:1;fill:#0c0e14;fill-opacity:0.9;stroke:none"/>
   </g>
   <g id="decoration-top">
-    <path id="path111" d="M1 0H63V1H1.00001L1 0Z" style="color:#383c4a;opacity:1;fill:#0c0e14;fill-opacity:0.8;stroke:none"/>
-    <!-- <path id="path4433" opacity="0.2" d="M1 6.10352e-05V0.142918H63V6.10352e-05H1Z" fill="black"/> -->
+    <path id="path111" d="M1 0H63V1H1.00001L1 0Z" style="color:#383c4a;opacity:1;fill:#0c0e14;fill-opacity:0.9;stroke:none"/>
   </g>
   <g id="decoration-topright">
-    <path id="path119" d="M63 0V1.00005H64.0001L64 0H63.2857H63Z" style="color:#383c4a;opacity:1;fill:#0c0e14;fill-opacity:0.8;stroke:none"/>
-    <!-- <path id="path4445" opacity="0.2" d="M63 6.10352e-05V0.142926H63.8572V0.714384V1.00011H64.0001V0.714384L64 0L63 6.10352e-05Z" fill="black"/> -->
+    <path id="path119" d="M63 0V1.00005H64.0001L64 0H63.2857H63Z" style="color:#383c4a;opacity:1;fill:#0c0e14;fill-opacity:0.9;stroke:none"/>
   </g>
   <g id="decoration-right">
-    <path id="path79" d="M64 1V63L63 63V1.00001L64 1Z" style="color:#383c4a;opacity:1;fill:#0c0e14;fill-opacity:0.8;stroke:none"/>
-    <!-- <path id="path4440" opacity="0.2" d="M63.8571 1.00006V63.0001H64V1.00006H63.8571Z" fill="black"/> -->
+    <path id="path79" d="M64 1V63L63 63V1.00001L64 1Z" style="color:#383c4a;opacity:1;fill:#0c0e14;fill-opacity:0.9;stroke:none"/>
   </g>
   <g id="decoration-bottomright">
-    <path id="path103" d="M63 64V63H64V64L63.2857 64H63Z" style="color:#383c4a;opacity:1;fill:#0c0e14;fill-opacity:0.8;stroke:none"/>
-    <!-- <path id="path4449" opacity="0.2" d="M63.8571 63V63.8571H63.2857H63V64H63.2857H64V63H63.8571Z" fill="black"/> -->
+    <path id="path103" d="M63 64V63H64V64L63.2857 64H63Z" style="color:#383c4a;opacity:1;fill:#0c0e14;fill-opacity:0.9;stroke:none"/>
   </g>
   <g id="decoration-bottom">
-    <path id="path95" d="M1 64H63V63.0001H1.00001L1 64Z" style="color:#383c4a;opacity:1;fill:#0c0e14;fill-opacity:0.8;stroke:none"/>
-    <!-- <path id="path4436" opacity="0.2" d="M1 63.8571V64H63V63.8571H1Z" fill="black"/> -->
+    <path id="path95" d="M1 64H63V63.0001H1.00001L1 64Z" style="color:#383c4a;opacity:1;fill:#0c0e14;fill-opacity:0.9;stroke:none"/>
   </g>
   <g id="decoration-bottomleft">
-    <path id="path87" d="M1 64V63H0V63.2857V64L1 64Z" style="color:#383c4a;opacity:1;fill:#0c0e14;fill-opacity:0.8;stroke:none"/>
-    <!-- <path id="path4447" opacity="0.2" d="M0 63V64L0.714286 64H1V63.8571H0.857144H0.714286H0.142857V63H0Z" fill="black"/> -->
+    <path id="path87" d="M1 64V63H0V63.2857V64L1 64Z" style="color:#383c4a;opacity:1;fill:#0c0e14;fill-opacity:0.9;stroke:none"/>
   </g>
 
   <rect
