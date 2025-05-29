@@ -41,6 +41,10 @@ set -U fish_pager_color_secondary_description "#b9b1bc" # description of every s
 
 starship init fish | source
 
+# fzf
+fzf --fish | source
+# fzf end
+
 # pnpm
 set -gx PNPM_HOME "/home/gegeh/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
