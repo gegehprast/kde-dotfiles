@@ -39,8 +39,11 @@ set -U fish_pager_color_secondary_prefix "#f2f2e3" --underline # prefix of every
 set -U fish_pager_color_secondary_completion "#b9b1bc" # suffix of every second unselected completion
 set -U fish_pager_color_secondary_description "#b9b1bc" # description of every second unselected completion
 
-starship init fish | source
+# EDITOR
+set -gx EDITOR code
+#EDITOR end
 
+starship init fish | source
 
 # yazi
 function y
